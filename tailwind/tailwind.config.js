@@ -2,12 +2,13 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [
     function ({ addVariant }) {
         addVariant('child', '& > *');
-        addVariant('child-hover', '& > *:hover');
+        addVariant('child-hover', '& > li:hover');
     }
   ],
 }

@@ -12,43 +12,61 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-</head>
-<body>
 
-    <header class="bg-gray-400">
-        <nav class="flex justify-between w-11/12 mx-auto items-center py-7">
+</head>
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+
+    <header class="bg-white  shadow-lg border-b-black">
+        <nav class="flex justify-between w-11/12 mx-auto  items-center py-7">
 
             <div>
-                <p class="font-bold text-white text-2xl">LOGO</p>
+                <p class="font-bold text-black text-3xl">LO<span class="text-cyan-600">GO</span></p>
             </div>
 
-            <ul class="flex space-x-8 items-center child:py-2 text-white font-medium text-sm child:border-b-2 child:border-gray-400 child-hover:border-white">
-                <li class=""><a href="#">Home</a></li>
+            <ul class="hidden gap-16 md:flex text-black items-center child:py-2 font-bold child:cursor-pointer text-medium child:border-b-2 child:border-transparent child-hover:border-cyan-600 child-hover:duration-300 child-hover:text-cyan-600">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <button class="bg-black px-4 rounded-3xl text-xs uppercase">get started</button>
+                <button class="bg-black px-4  rounded-3xl text-xs text-white uppercase hover:text-white">get started</button>
             </ul>
+
+            <div class="block md:hidden cursor-pointer">
+                <div class="h-px bg-black my-1.5 rounded  w-5"></div>
+                <div class="h-px bg-black my-1.5 rounded  w-5"></div>
+                <div class="h-px bg-black my-1.5 rounded  w-5"></div>
+                
+            </div>
         </nav>
     </header>
 
     <div>
-        <div>
-            <h1>Web Design</h1>
-            <h3>Landing page</h3>
+        <div class="w-11/12 m-auto block md:flex items-center justify-between">
 
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab dolores sapiente. Modi accusamus ipsa reiciendis nemo natus soluta nulla dolor assumenda necessitatibus doloremque, quis reprehenderit numquam incidunt praesentium repellat nam odio excepturi dolorum fugit? Minus sequi eum similique commodi!</small>
-            <button>leaern more</button>
+            <div class="w-full md:w-2/4  my-40">
+                <h1 class="text-6xl text-white  font-bold opacity-80 mb-4">Web Design</h1>
+                <h3 class="text-white text-3xl mb-6 font-medium  tracking-wider">Landing page</h3>
+
+                <small class="w-full md:w-3/4 opacity-70 font-bold  text-white  block mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab dolores sapiente. Modi accusamus ipsa reiciendis nemo natus soluta nulla dolor assumenda necessitatibus doloremque, quis reprehenderit numquam incidunt praesentium repellat nam odio excepturi dolorum fugit? Minus sequi eum similique commodi!</small>
+                <button class="bg-cyan-600 uppercase  text-white px-4 py-1 text-xs mb-3 rounded-3xl ">leaern more</button>
 
 
-            <div>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
+                <div class="child:block flex gap-4 child:cursor-pointer child:text-xl items-center w-fit p-2 px-4 rounded-3xl bg-cyan-400 text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
 
+                </div>
+            </div>
+
+            <div class="w-2/4 hidden md:block">
+                <img src="./vector.png" alt="" class="shadow-lg">
             </div>
         </div>
+
     </div>
+
+
 
 </body>
 </html>
