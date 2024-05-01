@@ -1,1 +1,1 @@
-#For learning new Techs
+# For learning new techs & stacks & technologies
